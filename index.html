@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympiades d’Astronomie Maroc 2025 - OAM25 | 1ère Édition</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- Section d'Introduction avec Logos et Textes -->
+        <div class="intro-section">
+            <div class="logos">
+                <img src="OAM_logo.png" alt="Logo Olympiades d’Astronomie Maroc" class="logo" width="70">
+                <img src="HEPAC_logo.jpeg" alt="Logo Université" class="logo" width="70">
+                <h3>Olympiades d’Astronomie Maroc 2025 - OAM25 | 1ère Édition</h3>
+            </div>
+        </div>
+
+        <!-- Grille des numéros de questions -->
+        <div class="question-grid" id="question-grid">
+            <!-- Les numéros de questions seront générés dynamiquement -->
+        </div>
+
+        <h2>Test de Connaissances en Astronomie</h2>
+
+        <!-- <div class="total-timer" id="total-timer">Temps total restant : 02:30</div> -->
+
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question active" data-time="5" data-question="1">
+                <div class="question-header">
+                    <div class="question-number">Question 1</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>1. Quelle est la plus grande planète de notre système solaire ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a" required> Terre</label>
+                    <label><input type="radio" name="q1" value="b"> Jupiter</label>
+                    <label><input type="radio" name="q1" value="c"> Mars</label>
+                    <label><input type="radio" name="q1" value="d"> Saturne</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+            
+            <!-- Question 2 -->
+            <div class="question" data-time="5" data-question="2">
+                <div class="question-header">
+                    <div class="question-number">Question 2</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>2. Quelle étoile est au centre de notre système solaire ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a" required> Sirius</label>
+                    <label><input type="radio" name="q2" value="b"> Alpha Centauri</label>
+                    <label><input type="radio" name="q2" value="c"> Soleil</label>
+                    <label><input type="radio" name="q2" value="d"> Proxima Centauri</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+            
+            <!-- Question 3 -->
+            <div class="question" data-time="5" data-question="3">
+                <div class="question-header">
+                    <div class="question-number">Question 3</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>3. Combien de lunes possède la planète Mars ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a" required> 1</label>
+                    <label><input type="radio" name="q3" value="b"> 2</label>
+                    <label><input type="radio" name="q3" value="c"> 3</label>
+                    <label><input type="radio" name="q3" value="d"> Aucune</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question" data-time="5" data-question="4">
+                <div class="question-header">
+                    <div class="question-number">Question 4</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>4. Quelle est la planète la plus proche du Soleil ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a" required> Mercure</label>
+                    <label><input type="radio" name="q4" value="b"> Vénus</label>
+                    <label><input type="radio" name="q4" value="c"> Terre</label>
+                    <label><input type="radio" name="q4" value="d"> Mars</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question" data-time="5" data-question="5">
+                <div class="question-header">
+                    <div class="question-number">Question 5</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>5. Quelle galaxie est la nôtre ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a" required> Andromède</label>
+                    <label><input type="radio" name="q5" value="b"> Voie Lactée</label>
+                    <label><input type="radio" name="q5" value="c"> Galaxie du Triangle</label>
+                    <label><input type="radio" name="q5" value="d"> Galaxie de Sombrero</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question" data-time="5" data-question="6">
+                <div class="question-header">
+                    <div class="question-number">Question 6</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>6. Quel phénomène se produit lorsqu'une étoile explose en fin de vie ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a" required> Nova</label>
+                    <label><input type="radio" name="q6" value="b"> Supernova</label>
+                    <label><input type="radio" name="q6" value="c"> Pulsar</label>
+                    <label><input type="radio" name="q6" value="d"> Quasar</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question" data-time="5" data-question="7">
+                <div class="question-header">
+                    <div class="question-number">Question 7</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>7. Quel est le nom de la première femme astronaute à avoir voyagé dans l'espace ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a" required> Valentina Terechkova</label>
+                    <label><input type="radio" name="q7" value="b"> Sally Ride</label>
+                    <label><input type="radio" name="q7" value="c"> Mae Jemison</label>
+                    <label><input type="radio" name="q7" value="d"> Peggy Whitson</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question" data-time="5" data-question="8">
+                <div class="question-header">
+                    <div class="question-number">Question 8</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>8. Quel est le nom de la plus grande lune de Jupiter ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a" required> Io</label>
+                    <label><input type="radio" name="q8" value="b"> Europe</label>
+                    <label><input type="radio" name="q8" value="c"> Ganymède</label>
+                    <label><input type="radio" name="q8" value="d"> Callisto</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question" data-time="5" data-question="9">
+                <div class="question-header">
+                    <div class="question-number">Question 9</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>9. Quelle est la température approximative du Soleil à sa surface ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a" required> 5 500°C</label>
+                    <label><input type="radio" name="q9" value="b"> 10 000°C</label>
+                    <label><input type="radio" name="q9" value="c"> 1 000°C</label>
+                    <label><input type="radio" name="q9" value="d"> 15 000°C</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question" data-time="5" data-question="10">
+                <div class="question-header">
+                    <div class="question-number">Question 10</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>10. Quelle planète est connue pour ses anneaux spectaculaires ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a" required> Mars</label>
+                    <label><input type="radio" name="q10" value="b"> Vénus</label>
+                    <label><input type="radio" name="q10" value="c"> Saturne</label>
+                    <label><input type="radio" name="q10" value="d"> Mercure</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question" data-time="5" data-question="11">
+                <div class="question-header">
+                    <div class="question-number">Question 11</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>11. Quelle est la plus proche galaxie de la Voie Lactée ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="a" required> Andromède</label>
+                    <label><input type="radio" name="q11" value="b"> Triangulum</label>
+                    <label><input type="radio" name="q11" value="c"> Grande Ourse</label>
+                    <label><input type="radio" name="q11" value="d"> Petite Ourse</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question" data-time="5" data-question="12">
+                <div class="question-header">
+                    <div class="question-number">Question 12</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>12. Quelle est la force responsable de maintenir les planètes en orbite autour du Soleil ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="a" required> Électromagnétisme</label>
+                    <label><input type="radio" name="q12" value="b"> Force nucléaire forte</label>
+                    <label><input type="radio" name="q12" value="c"> Gravitation</label>
+                    <label><input type="radio" name="q12" value="d"> Force nucléaire faible</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question" data-time="5" data-question="13">
+                <div class="question-header">
+                    <div class="question-number">Question 13</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>13. Quelle est la planète la plus chaude de notre système solaire ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="a" required> Mercure</label>
+                    <label><input type="radio" name="q13" value="b"> Vénus</label>
+                    <label><input type="radio" name="q13" value="c"> Terre</label>
+                    <label><input type="radio" name="q13" value="d"> Mars</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question" data-time="5" data-question="14">
+                <div class="question-header">
+                    <div class="question-number">Question 14</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>14. Quelle est la plus grande lune de Saturne ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="a" required> Titan</label>
+                    <label><input type="radio" name="q14" value="b"> Encelade</label>
+                    <label><input type="radio" name="q14" value="c"> Mimas</label>
+                    <label><input type="radio" name="q14" value="d"> Rhea</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question" data-time="5" data-question="15">
+                <div class="question-header">
+                    <div class="question-number">Question 15</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>15. Quel est le phénomène où la lumière d'une étoile est décalée vers le rouge ou le bleu en raison de son mouvement ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="a" required> Effet Doppler</label>
+                    <label><input type="radio" name="q15" value="b"> Effet de lentille gravitationnelle</label>
+                    <label><input type="radio" name="q15" value="c"> Réfraction</label>
+                    <label><input type="radio" name="q15" value="d"> Dispersion</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question" data-time="5" data-question="16">
+                <div class="question-header">
+                    <div class="question-number">Question 16</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>16. Quel est le nom du télescope spatial lancé en 1990 par la NASA ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q16" value="a" required> Spitzer</label>
+                    <label><input type="radio" name="q16" value="b"> Hubble</label>
+                    <label><input type="radio" name="q16" value="c"> Kepler</label>
+                    <label><input type="radio" name="q16" value="d"> James Webb</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="question" data-time="5" data-question="17">
+                <div class="question-header">
+                    <div class="question-number">Question 17</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>17. Quelle est la distance approximative entre la Terre et le Soleil ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q17" value="a" required> 93 millions de miles</label>
+                    <label><input type="radio" name="q17" value="b"> 150 millions de kilomètres</label>
+                    <label><input type="radio" name="q17" value="c"> 50 millions de kilomètres</label>
+                    <label><input type="radio" name="q17" value="d"> 200 millions de kilomètres</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="question" data-time="5" data-question="18">
+                <div class="question-header">
+                    <div class="question-number">Question 18</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>18. Quel est le nom du plus grand volcan du système solaire, situé sur Mars ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q18" value="a" required> Olympus Mons</label>
+                    <label><input type="radio" name="q18" value="b"> Mauna Loa</label>
+                    <label><input type="radio" name="q18" value="c"> Mount Everest</label>
+                    <label><input type="radio" name="q18" value="d"> Mount Kilimanjaro</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="question" data-time="5" data-question="19">
+                <div class="question-header">
+                    <div class="question-number">Question 19</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>19. Quel est le nom de la première sonde à avoir quitté notre système solaire ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q19" value="a" required> Voyager 1</label>
+                    <label><input type="radio" name="q19" value="b"> Voyager 2</label>
+                    <label><input type="radio" name="q19" value="c"> Pioneer 10</label>
+                    <label><input type="radio" name="q19" value="d"> New Horizons</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="question" data-time="5" data-question="20">
+                <div class="question-header">
+                    <div class="question-number">Question 20</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>20. Quel phénomène cosmique est responsable de la création des éléments légers comme l'hydrogène et l'hélium ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q20" value="a" required> Big Bang</label>
+                    <label><input type="radio" name="q20" value="b"> Supernova</label>
+                    <label><input type="radio" name="q20" value="c"> Fusion nucléaire</label>
+                    <label><input type="radio" name="q20" value="d"> Accrétion</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 21 -->
+            <div class="question" data-time="5" data-question="21">
+                <div class="question-header">
+                    <div class="question-number">Question 21</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>21. Quelle est la phase finale d'une étoile de masse similaire à celle du Soleil ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q21" value="a" required> Supernova</label>
+                    <label><input type="radio" name="q21" value="b"> Nébuleuse planétaire</label>
+                    <label><input type="radio" name="q21" value="c"> Trou noir</label>
+                    <label><input type="radio" name="q21" value="d"> Étoile à neutrons</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 22 -->
+            <div class="question" data-time="5" data-question="22">
+                <div class="question-header">
+                    <div class="question-number">Question 22</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>22. Quelle est la plus grande étoile connue dans notre galaxie ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q22" value="a" required> VY Canis Majoris</label>
+                    <label><input type="radio" name="q22" value="b"> Betelgeuse</label>
+                    <label><input type="radio" name="q22" value="c"> Antares</label>
+                    <label><input type="radio" name="q22" value="d"> Rigel</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 23 -->
+            <div class="question" data-time="5" data-question="23">
+                <div class="question-header">
+                    <div class="question-number">Question 23</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>23. Quel est le nom de la sonde qui a été la première à prendre des photos de la face cachée de la Lune ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q23" value="a" required> Apollo 8</label>
+                    <label><input type="radio" name="q23" value="b"> Luna 3</label>
+                    <label><input type="radio" name="q23" value="c"> Surveyor 1</label>
+                    <label><input type="radio" name="q23" value="d"> Ranger 7</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 24 -->
+            <div class="question" data-time="5" data-question="24">
+                <div class="question-header">
+                    <div class="question-number">Question 24</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>24. Quel est le nom de la galaxie voisine de la Voie Lactée ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q24" value="a" required> Andromède</label>
+                    <label><input type="radio" name="q24" value="b"> Triangulum</label>
+                    <label><input type="radio" name="q24" value="c"> Messier 81</label>
+                    <label><input type="radio" name="q24" value="d"> Messier 82</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 25 -->
+            <div class="question" data-time="5" data-question="25">
+                <div class="question-header">
+                    <div class="question-number">Question 25</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>25. Quelle est la composante la plus abondante dans l'univers ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q25" value="a" required> Hydrogène</label>
+                    <label><input type="radio" name="q25" value="b"> Hélium</label>
+                    <label><input type="radio" name="q25" value="c"> Oxygène</label>
+                    <label><input type="radio" name="q25" value="d"> Carbone</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 26 -->
+            <div class="question" data-time="5" data-question="26">
+                <div class="question-header">
+                    <div class="question-number">Question 26</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>26. Quelle est la période de révolution de la Terre autour du Soleil ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q26" value="a" required> 24 heures</label>
+                    <label><input type="radio" name="q26" value="b"> 7 jours</label>
+                    <label><input type="radio" name="q26" value="c"> 365 jours</label>
+                    <label><input type="radio" name="q26" value="d"> 30 jours</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 27 -->
+            <div class="question" data-time="5" data-question="27">
+                <div class="question-header">
+                    <div class="question-number">Question 27</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>27. Quel est le nom de la lumière visible émise par une étoile lorsqu'elle est à la fin de sa vie ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q27" value="a" required> Rayonnement thermique</label>
+                    <label><input type="radio" name="q27" value="b"> Rayonnement de Hawking</label>
+                    <label><input type="radio" name="q27" value="c"> Rayonnement Synchrone</label>
+                    <label><input type="radio" name="q27" value="d"> Rayonnement de Cassegrain</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 28 -->
+            <div class="question" data-time="5" data-question="28">
+                <div class="question-header">
+                    <div class="question-number">Question 28</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>28. Quel est le nom de la force qui empêche les planètes de s'éloigner dans l'espace ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q28" value="a" required> Électromagnétisme</label>
+                    <label><input type="radio" name="q28" value="b"> Gravitation</label>
+                    <label><input type="radio" name="q28" value="c"> Force centrifuge</label>
+                    <label><input type="radio" name="q28" value="d"> Force de Coriolis</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 29 -->
+            <div class="question" data-time="5" data-question="29">
+                <div class="question-header">
+                    <div class="question-number">Question 29</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>29. Quelle est la distance approximative entre la Terre et la Lune ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q29" value="a" required> 384 400 kilomètres</label>
+                    <label><input type="radio" name="q29" value="b"> 150 millions de kilomètres</label>
+                    <label><input type="radio" name="q29" value="c"> 1 million de kilomètres</label>
+                    <label><input type="radio" name="q29" value="d"> 10 000 kilomètres</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <!-- Question 30 -->
+            <div class="question" data-time="5" data-question="30">
+                <div class="question-header">
+                    <div class="question-number">Question 30</div>
+                    <div class="timer" id="timer">Temps restant : 00:05</div>
+                </div>
+                <p><strong>30. Quel est le nom de la plus petite planète de notre système solaire ?</strong></p>
+                <div class="options">
+                    <label><input type="radio" name="q30" value="a" required> Mercure</label>
+                    <label><input type="radio" name="q30" value="b"> Vénus</label>
+                    <label><input type="radio" name="q30" value="c"> Mars</label>
+                    <label><input type="radio" name="q30" value="d"> Pluton</label>
+                </div>
+                <button type="button" class="next-btn">Suivant</button>
+            </div>
+
+            <input type="submit" value="Soumettre" class="submit-btn" style="display: none;">
+        </form>
+        <div class="result" id="result">Votre score : </div>
+    </div>
+    
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* Styles de base pour le QCM */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg'); /* Image de fond astronomique */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 30px;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Superposition sombre pour améliorer la lisibilité */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajustez l'opacité selon vos préférences */
+    z-index: 1;
+}
+
+.quiz-container {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 2; /* Assurez-vous que le formulaire est au-dessus de la superposition */
+}
+
+/* Grille des numéros de questions */
+.question-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.question-grid .grid-item {
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.question-grid .grid-item.answered {
+    background-color: #ff4d4d; /* Rouge pour les questions répondues */
+    color: white;
+    cursor: not-allowed;
+}
+
+/* Styles des titres */
+.quiz-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styles des questions */
+.question {
+    display: none; /* Masqué par défaut */
+}
+
+.question.active {
+    display: block; /* Affiché lorsque actif */
+}
+
+/* Entête de la question avec numéro et timer */
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.question-header .question-number {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.question-header .timer {
+    font-size: 18px;
+    color: #ff0000;
+}
+
+/* Styles des options de réponse */
+.options label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #000;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Styles des boutons */
+.submit-btn, .next-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #083993;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover, .next-btn:hover {
+    background-color: #45a040;
+}
+
+/* Styles du résultat */
+.result {
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+    display: none;
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 600px) {
+    .quiz-container {
+        padding: 20px;
+        margin: 10px;
+    }
+}
+
